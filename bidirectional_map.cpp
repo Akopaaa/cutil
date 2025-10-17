@@ -1,4 +1,3 @@
-#include <iostream>
 #include <map>
 
 template<typename K, typename V>
@@ -41,17 +40,3 @@ class bidirectional_map {
     }
 
 };
-
-int main() {
-
-    bidirectional_map bimap = bidirectional_map<int, int>();
-
-    bimap.add_pair(5, 3);
-    bimap.add_pair(6, 7);
-    bimap.remove_w_key(5);
-
-    std::cout << bimap.keys[5];
-
-    return 0;
-
-}
